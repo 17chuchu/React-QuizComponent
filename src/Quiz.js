@@ -4,16 +4,15 @@ import QuizQuestion from './QuizQuestion.js';
 let quizData = require('./quiz_data.json');
 
 class Quiz extends React.Component {
-    state = {
-        quiz_position: 1
-    }
 
     constructor(props) {
         super(props);
+        this.state = {
+            quiz_position: 1
+        }
     }
 
     render() {
-        console.log(quizData);
         return (
             <div>
                 <QuizQuestion
